@@ -1,0 +1,201 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: coral;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 95%;
+    max-width: 1170px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.wrapper {
+    width: 300px;
+    font-size: 0;
+    margin: 100px auto;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: azure;
+    /*    transform: scale(0);*/
+}
+
+.a {
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.11s;
+    animation-timing-function: ease;
+}
+
+.b {
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.22s;
+    animation-timing-function: ease;
+}
+
+.c {
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.33s;
+    animation-timing-function: ease;
+}
+
+.d {
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.44s;
+    animation-timing-function: ease;
+}
+
+.e {
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.55s;
+    animation-timing-function: ease;
+}
+
+@keyframes box {
+    0% {
+        transform: scale(0)
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    20% {
+        transform: scale(0)
+    }
+    30% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0)
+    }
+}
+
+.wrapper2 {
+    font-size: 0;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.box {
+    transition-duration: 1s;
+}
+
+
+/*kampai*/
+
+#a1:hover {
+    transform: scale(0.4)
+}
+
+#a1:hover~#a2,
+#a1:hover~#b1 {
+    transform: scale(0.6)
+}
+
+#a1:hover~#a3,
+#a1:hover~#b2,
+#a1:hover~#c1 {
+    transform: scale(0.8)
+}
+
+
+#a4:hover {
+    transform: scale(0.4)
+}
+
+#a4:hover~#a3,
+#a4:hover~#b4 {
+    transform: scale(0.6)
+}
+
+#a4:hover~#a2,
+#a4:hover~#b3,
+#a4:hover~#c4 {
+    transform: scale(0.8)
+}
+
+#a1:hover {
+    transform: scale(0.4)
+}
+
+#a1:hover~#a2,
+#a1:hover~#b1 {
+    transform: scale(0.6)
+}
+
+#a1:hover~#a3,
+#a1:hover~#b2,
+#a1:hover~#c1 {
+    transform: scale(0.8)
+}
+
+#a1:hover {
+    transform: scale(0.4)
+}
+
+#a1:hover~#a2,
+#a1:hover~#b1 {
+    transform: scale(0.6)
+}
+
+#a1:hover~#a3,
+#a1:hover~#b2,
+#a1:hover~#c1 {
+    transform: scale(0.8)
+}
+
+
+/*sonai*/
+#a2:hover {
+    transform: scale(0.4)
+}
+
+#a2:hover~#a3,
+#a2:hover~#a1,
+#a2:hover~#b2 {
+    transform: scale(0.6)
+}
+#a2:hover~#a4,
+#a2:hover~#b3,
+#a2:hover~#b1,
+#a2:hover~#c2 {
+    transform: scale(0.8)
+}
+
+#a3:hover {
+    transform: scale(0.4)
+}
+
+#a3:hover~#a4,
+.wrapper2 div:nth-child(3):hover .wrapper2 div:nth-child(2),
+#a3:hover~#b3 {
+    transform: scale(0.6)
+}
+#a3:hover~#b4,
+#a3:hover~#b2,
+#a3:hover~#c3 {
+    transform: scale(0.8)
+}
+
